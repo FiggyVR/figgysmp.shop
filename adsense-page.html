@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NebulaClient Ad Slot</title>
+<style>
+  /* Transparent so the launcher's glass/starfield shows through around
+     whatever AdSense fills in. */
+  html, body { margin:0; padding:0; background:transparent; overflow:hidden; }
+  .adsbygoogle { display:block; }
+</style>
+</head>
+<body>
+<!--
+  HOW TO USE THIS FILE
+  ====================
+  Host it somewhere public over HTTPS (GitHub Pages works and is free) and
+  make sure that domain is the one approved on your AdSense account. Then
+  point AD_PAGE_URL in src/renderer/renderer.js at it.
+
+  Why a hosted page instead of pasting the snippet straight into the
+  launcher: AdSense needs to crawl a real public URL to verify the page,
+  and its policies expect ads to run on an approved site — a desktop app
+  loading local files over file:// is neither. Loading this page inside a
+  sandboxed iframe also keeps Google's script out of the launcher's own
+  privileged context, which is the safe way to run any third-party JS in
+  an Electron app.
+
+  Expect empty space rather than ads until AdSense both approves the site
+  and decides to fill the slot.
+-->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7931973085541540"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7931973085541540"
+     data-ad-slot="8096606691"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
